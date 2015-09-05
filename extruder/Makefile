@@ -75,7 +75,7 @@ AVRDUDECONF = /etc/avrdude.conf
 PROGPORT = /dev/arduino
 # PROGPORT = /dev/ttyUSB0
 
-PROGBAUD = 57600
+PROGBAUD = 19200
 
 OBJ = $(patsubst %.c,%.o,${SOURCES})
 
