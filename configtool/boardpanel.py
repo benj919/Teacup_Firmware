@@ -659,7 +659,11 @@ class BoardPanel(wx.Panel):
             fp.write("//")
           fp.write(defineValueFormat % (t[0], v[0]))
         else:
-          print "Value key " + t[0] + " not found in GUI."
+            if t[0] == 'TX_ENABLE_PIN' or t[0] == 'RX_ENABLE_PIN':
+                # Known to be absent in the GUI, probably won't be added anytime soon.
+                fp.write(ln)
+            else:
+                print "Value key " + t[0] + " not found in GUI."
 
         continue
 
