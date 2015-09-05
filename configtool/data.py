@@ -62,7 +62,7 @@ reTempTable4 = re.compile(".*\\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d*.?\d*
 reTempTable7 = re.compile(".*\\(\s*(\d+)\s*,\s*(\d*.?\d*)\s*,\s*(\d+)\s*,\s*(\d*.?\d*)\s*,\s*(\d+)\s*,\s*(\d*.?\d*)\s*,\s*(\d+)\s*\\)")
 
 reInteger = re.compile("^\d+U?L?$")
-reFloat = re.compile("^\d+(\.\d*)?$")
+reFloat = re.compile("^-?\d+(\.\d*)?$")
 
 defineValueFormat =      "#define %-24s %s\n"
 defineBoolFormat =       "#define %s\n"
