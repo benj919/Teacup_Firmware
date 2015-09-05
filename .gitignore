@@ -1,5 +1,12 @@
+*.i
+*.o
+*.s
+*.al
 *.pyc
 *.hex
+*.elf
+*.lst
+*.sym
 build
 *~
 
